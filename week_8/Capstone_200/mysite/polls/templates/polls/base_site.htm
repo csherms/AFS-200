@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AFS-200 Capstone</title>
+</head>
+
+<body>
+  {% extends "admin/base.htm" %} {% block title %}{% if subtitle %}{{ subtitle }}
+  | {% endif %}{{ title }} | {{ site_title|default:_('Django site admin') }}{%
+  endblock %} {% block branding %}
+  <h1 id="site-name">
+    <a href="{% url 'admin:index' %}">AFS-200 Capstone</a>
+  </h1>
+  {% endblock %} {% block nav-global %}{% endblock %}
+</body>
+
+</html>
